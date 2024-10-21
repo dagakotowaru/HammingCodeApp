@@ -1,0 +1,23 @@
+﻿<Window x:Class="HammingCodeApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Программа для кода Хемминга" Height="300" Width="400">
+    <Grid>
+        <!-- Ввод 8-битного кода -->
+        <Label Content="Введите 8-битный код:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <TextBox Name="BinaryInput" HorizontalAlignment="Left" Height="23" Margin="10,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <!-- Кнопка для добавления проверочных разрядов -->
+        <Button Name="AddCheckBitsButton" Content="Добавить проверочные разряды" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Height="30" Margin="10,80,0,0" Click="AddCheckBits_Click"/>
+
+        <!-- Поле для отображения 12-битного кода -->
+        <Label Content="12-битный код Хемминга:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,130,0,0"/>
+        <TextBox Name="HammingCodeInput" HorizontalAlignment="Left" Height="23" Margin="10,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
+
+        <!-- Кнопка для проверки 12-битного кода -->
+        <Button Name="CheckCodeButton" Content="Проверить код" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Margin="10,200,0,0" Click="CheckCode_Click"/>
+
+        <!-- Поле для отображения результата -->
+        <TextBlock Name="ResultText" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,240,0,0" Width="360" Height="40" TextWrapping="Wrap"/>
+    </Grid>
+</Window>
